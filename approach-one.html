@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Approach 1: Using Flexbox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      main {
+        height: calc(100% - 60px);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+      }
+
+      nav {
+        box-sizing: border-box;
+        height: 60px;
+      }
+
+      #main-container {
+        background-color: yellow;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #inner-container {
+        color: #ffffff;
+        background-color: red;
+        height: 90px;
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
+    <main>
+      <div id="main-container">
+        <div id="inner-container">My Div</div>
+      </div>
+    </main>
+  </body>
+</html>
